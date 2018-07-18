@@ -1,5 +1,5 @@
-twitter_consumer_key="U11jHmgd1RkiZPHxqFFpDAcko"
-twitter_consumer_sec="AzyW5DwJIV4Czc206GjtVJ7ymYZhPku1MJmDonHd2HvPsl3CGr"
+twitter_consumer_key="#####"
+twitter_consumer_sec="#####"
 #  to get token 
-twitter_access_token="987956507403677702-8v9i6lm5PxX7u2goefEze4GUJh2vZyl"
-twitter_access_secret="EG8AEGHsWmpj2VoLclJLhlSpPFhOxM4YTmL1Tj5FI3JcR"
+twitter_access_token="#####"
+twitter_access_secret="#####"
