@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import  tweepy
 from textblob  import TextBlob
 import matplotlib.pyplot as plt
@@ -24,16 +23,10 @@ connected=tweepy.API(check)
 def checksentiment(userid, usertext, no_tweets):
 	output=connected.search(usertext,count=no_tweets)
 	# extracting  text words  
-
-	for i in  output:
-	    sample=i.text
-	    blob_data=TextBlob(sample)
-	# extracting  text words  
 	positive=0
 	negative=0
 	neutral=0
 	polarity=0
-
 
 	for i in  output:
 		sample=i.text
@@ -62,7 +55,7 @@ def checksentiment(userid, usertext, no_tweets):
 	height=[pos,neg,neu]
 	tick_label=['POSITIVE','NEGATIVE','NEUTRAL']
 	plt.bar(left,height,tick_label=tick_label,width=0.2,color=['yellowgreen','red','green'])
-	plt.ylabel('No. of tweets analyzed - '+ no_tweets)
+	plt.ylabel('No. of tweets analyzed - '+ str(no_tweets))
 	plt.xlabel('You searched for ' + usertext)
 	plt.savefig("./static/img/"+userid+".png")
 	plt.close()

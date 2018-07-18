@@ -4,10 +4,13 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
     </head>
     <body>
-        <div class="box">
-            <h1>Twitter Sentimental Analysis</h1>
-            <p>Thanks for trying us out!<br>Your unique ID is <b>{{ unique_id }}</b>. Please <a href="/haveid">click here</a> and use this ID to check out the graph.
-        </div>
+        <form method="post" action="/validate">
+            <div class="box">
+                <p>Registered Successfully!<br>
+                    Please use your username <b>{{ username }}</b> to login.</p>
+                <a href="/"><input class="btn" type="button" value="Login"></a>
+            </div>
+        </form>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     </body>
 </html>

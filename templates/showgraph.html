@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
     </head>
     <body>
+        <h4>This search for initiated by {{ checkid["username"] }}</h4>
+        <h4>Unique ID : {{ checkid["unique_id"] }}</h4>
         <img src="{{ img_name }}">
         <div class="box">
             <p>Want to look for some another analysis?</p>

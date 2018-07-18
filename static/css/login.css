@@ -26,6 +26,15 @@ body{
     padding:0px 0px 70px 0px;
     border: #2980b9 4px solid; 
   }
+
+  .smallbox{
+    background:white;
+    width:150px;
+    border-radius:6px;
+    margin: 0 auto 0 auto;
+    padding:0px 5px 70px 0px;
+    border: #2980b9 4px solid; 
+  }
   
   .email{
     background:#ecf0f1;

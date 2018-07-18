@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+	</head>	
+	<style>	
+		*{
+			margin :0px;
+			padding :0px;
+		}
+		body{
+
+            background : url("image.jpeg")
+			no-repeat center center fixed;
+	        background-size: cover;
+	        font-family: 'Roboto', sans-serif;
+	
+			font-family: san-serif;
+			background-color: #cfd1d3;
+			
+		}
+		#topbar{
+			width: 100%;
+			background-color: white;
+			padding: 40px 0px 60px 0px;
+		}
+		#left-topbar{
+			float:left;
+			
+
+		}
+		#right-topbar{
+			float:right;
+			margin-right: 20px;
+			font-size: 20px;
+		}
+		#register{
+			float: right;
+			border: solid 1px black;
+			padding: 70px 100px;
+			margin: 60px 150px;
+			background-color:white;
+			font-size: 30px;
+		}
+		.done{
+			padding:6px 15px;
+			font-size:20px;
+		}
+		#register input{
+			float: right;
+			margin-top: 10px;
+		}
+	</style>
+	<body>
+		<div id="topbar">
+			<div id="left-topbar">
+                  <div class="page-header">
+		  <h1 >Big Data Adminstrator Login </h1>
+		  </div>
+				
+	</div>
+	
+			<div id="right-topbar">
+				<form action="/validate" method="post">
+					Username: <input type="text" name="username">
+					Password: <input type="password" name="password">
+					<input class="done" type="Submit" value="Login">
+				</form>
+			</div>
+			
+		</div>
+		<div id="register">
+			Not a user? Register.<br><br>
+			<form action="/register" method="post">
+				Name: <input type="text" name="name"><br><br>
+				Contact: <input type="text" name="contact"><br><br>
+				Email: <input type="text" name="email"><br><br>
+				Username: <input type="text" name="username"><br><br>
+				Password: <input type="password" name="password"><br><br>
+				<input style="margin-left:300px;"class="done" type="Submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>
+
