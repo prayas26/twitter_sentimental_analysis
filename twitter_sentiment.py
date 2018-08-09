@@ -31,6 +31,7 @@ def checksentiment(userid, usertext, no_tweets):
 	for i in  output:
 		sample=i.text
 		blob_data=TextBlob(sample)
+		print blob_data
 		x=blob_data.sentiment
 	    #print(x)
 	   # polarity+=analysis.sentiment.polarity
